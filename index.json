@@ -1,6 +1,31 @@
 {
   "schema": 1,
-  "sequence": 1,
-  "generatedAt": "2026-10-19T00:00:00Z",
-  "plugins": []
+  "sequence": 2,
+  "generatedAt": "2026-10-19T19:00:06Z",
+  "plugins": [
+    {
+      "id": "hello",
+      "name": "Hello Plugin",
+      "summary": "Example plugin: health check, counter, panel API call, events, hooks and a menu page.",
+      "repo": "https://github.com/AllIsA1/lucx-plugin-hello",
+      "commit": "e8781da3f1667b4a5a5c7e4a812bdaa71ed54b50",
+      "version": "1.2.0",
+      "manifestSha256": "9ecf7391d6eb0ed7a8208e3d7d044ed7a6615bfb46c2c5cc705dd1c50b784bac",
+      "type": "process",
+      "scope": "both",
+      "permissions": [
+        "api:clients:read",
+        "events:client.created",
+        "ui:menu"
+      ],
+      "icon": "heart",
+      "license": "MIT",
+      "author": "LucX-UI",
+      "verified": {
+        "by": "AllIsA1",
+        "at": "2026-10-19",
+        "notes": "Example plugin built from the LucX-UI examples/hello-plugin source."
+      }
+    }
+  ]
 }
