@@ -1,16 +1,16 @@
 {
   "schema": 1,
-  "sequence": 2,
-  "generatedAt": "2026-10-19T19:00:06Z",
+  "sequence": 3,
+  "generatedAt": "2026-10-19T19:00:48Z",
   "plugins": [
     {
       "id": "hello",
       "name": "Hello Plugin",
       "summary": "Example plugin: health check, counter, panel API call, events, hooks and a menu page.",
       "repo": "https://github.com/AllIsA1/lucx-plugin-hello",
-      "commit": "e8781da3f1667b4a5a5c7e4a812bdaa71ed54b50",
-      "version": "1.2.0",
-      "manifestSha256": "9ecf7391d6eb0ed7a8208e3d7d044ed7a6615bfb46c2c5cc705dd1c50b784bac",
+      "commit": "c9e27e852f2d32c2c0925de731a630614333d001",
+      "version": "1.2.1",
+      "manifestSha256": "c9ca93a169b51cc97c7a41453497bd9613536eca06137f95c303997edab7af33",
       "type": "process",
       "scope": "both",
       "permissions": [
