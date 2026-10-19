@@ -1,0 +1,3 @@
+# the signing key must never be committed
+*.key
+catalog.key
