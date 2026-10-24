@@ -1,16 +1,17 @@
 {
   "schema": 1,
-  "sequence": 5,
-  "generatedAt": "2026-10-24T14:20:01Z",
+  "sequence": 6,
+  "generatedAt": "2026-10-24T16:30:24Z",
   "plugins": [
     {
       "id": "better-lucx",
       "name": "Better LucX",
-      "summary": "OpenFlux in the subscription, links of any scheme (also in the client form), AmneziaWG formats",
+      "summary": "OpenFlux in the subscription, links of any scheme (also in the client form), AmneziaWG amneziawg:// config link",
       "repo": "https://github.com/AllIsA1/better-lucx",
-      "commit": "05bd14c9cb7a8fc32b518891119fd741b437aeb3",
-      "version": "1.2.0",
-      "manifestSha256": "f03cf3320ae787c2ee12f93ff9b419db47f5601cd8e5d0e23d37936680ad0450",
+      "commit": "03d76100241edf99078b802749f7dc21977f7540",
+      "track": true,
+      "version": "1.3.0",
+      "manifestSha256": "6b5e4d713d1070b225523e06b4c72e6556687d6ea1972d203999fe77b0bb5f8a",
       "type": "process",
       "scope": "both",
       "permissions": [
