@@ -1,17 +1,17 @@
 {
   "schema": 1,
-  "sequence": 8,
-  "generatedAt": "2026-10-24T18:51:13Z",
+  "sequence": 10,
+  "generatedAt": "2026-10-24T19:23:56Z",
   "plugins": [
     {
       "id": "better-lucx",
       "name": "Better LucX",
       "summary": "OpenFlux in the subscription, links of any scheme, AmneziaWG amneziawg:// link, CSQTT names",
       "repo": "https://github.com/AllIsA1/better-lucx",
-      "commit": "7ca83cb7532616ac775ff9d05fff929fb54f8eb7",
+      "commit": "1f5e4e7589b355f5012be6a0ffb44c95fe9f4c80",
       "track": true,
-      "version": "1.3.1",
-      "manifestSha256": "0e5487e9cfa121b393e19025d9dfac021ceb590092a4321b46fb746647a51b47",
+      "version": "1.3.2",
+      "manifestSha256": "cd599d1e2ab037723b6018c97173c12cb4a770045dd8edf3847e6a7d8ce0456d",
       "type": "process",
       "scope": "both",
       "permissions": [
@@ -53,30 +53,6 @@
         "by": "AllIsA1",
         "at": "2026-10-24",
         "notes": "Reviewed by the author. Only the OpenFlux core routes (status, download by hash, remove); the panel downloads and checks the hash; core built from upstream v0.13.0."
-      }
-    },
-    {
-      "id": "hello",
-      "name": "Hello Plugin",
-      "summary": "Example plugin: health check, counter, panel API call, events, hooks and a menu page.",
-      "repo": "https://github.com/AllIsA1/lucx-plugin-hello",
-      "commit": "c9e27e852f2d32c2c0925de731a630614333d001",
-      "version": "1.2.1",
-      "manifestSha256": "c9ca93a169b51cc97c7a41453497bd9613536eca06137f95c303997edab7af33",
-      "type": "process",
-      "scope": "both",
-      "permissions": [
-        "api:clients:read",
-        "events:client.created",
-        "ui:menu"
-      ],
-      "icon": "heart",
-      "license": "MIT",
-      "author": "LucX-UI",
-      "verified": {
-        "by": "AllIsA1",
-        "at": "2026-10-19",
-        "notes": "Example plugin built from the LucX-UI examples/hello-plugin source."
       }
     }
   ]
