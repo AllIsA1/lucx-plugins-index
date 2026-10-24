@@ -1,21 +1,22 @@
 {
   "schema": 1,
-  "sequence": 4,
-  "generatedAt": "2026-10-24T12:44:58Z",
+  "sequence": 5,
+  "generatedAt": "2026-10-24T14:20:01Z",
   "plugins": [
     {
       "id": "better-lucx",
       "name": "Better LucX",
-      "summary": "OpenFlux in the subscription and own links of any scheme for clients",
+      "summary": "OpenFlux in the subscription, links of any scheme (also in the client form), AmneziaWG formats",
       "repo": "https://github.com/AllIsA1/better-lucx",
-      "commit": "90b9393be5d7a7e4eedc5879ed01043ce47f71b3",
-      "version": "1.0.0",
-      "manifestSha256": "8cc0b8f0795fcf967e9d4c43b13391d99d817c88c6b225879e69b8b22bfda3ac",
+      "commit": "05bd14c9cb7a8fc32b518891119fd741b437aeb3",
+      "version": "1.2.0",
+      "manifestSha256": "f03cf3320ae787c2ee12f93ff9b419db47f5601cd8e5d0e23d37936680ad0450",
       "type": "process",
       "scope": "both",
       "permissions": [
         "api:clients:read",
         "api:inbounds:read",
+        "seam:api:clients",
         "seam:sub",
         "ui:menu"
       ],
@@ -25,7 +26,7 @@
       "verified": {
         "by": "AllIsA1",
         "at": "2026-10-24",
-        "notes": "Reviewed by the author. Reads clients and inbounds; takes part in subscription answers (seam:sub); keeps links in its own data dir; no network. Falls back to the panel's answer on failure."
+        "notes": "Reviewed by the author. Reads clients and inbounds; takes part in subscription and clients API answers (seam:sub, seam:api:clients); links kept in its data dir; no network. Falls back to the panel."
       }
     },
     {
