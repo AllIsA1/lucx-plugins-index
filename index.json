@@ -1,17 +1,17 @@
 {
   "schema": 1,
-  "sequence": 6,
-  "generatedAt": "2026-10-24T16:30:24Z",
+  "sequence": 8,
+  "generatedAt": "2026-10-24T18:51:13Z",
   "plugins": [
     {
       "id": "better-lucx",
       "name": "Better LucX",
-      "summary": "OpenFlux in the subscription, links of any scheme (also in the client form), AmneziaWG amneziawg:// config link",
+      "summary": "OpenFlux in the subscription, links of any scheme, AmneziaWG amneziawg:// link, CSQTT names",
       "repo": "https://github.com/AllIsA1/better-lucx",
-      "commit": "03d76100241edf99078b802749f7dc21977f7540",
+      "commit": "7ca83cb7532616ac775ff9d05fff929fb54f8eb7",
       "track": true,
-      "version": "1.3.0",
-      "manifestSha256": "6b5e4d713d1070b225523e06b4c72e6556687d6ea1972d203999fe77b0bb5f8a",
+      "version": "1.3.1",
+      "manifestSha256": "0e5487e9cfa121b393e19025d9dfac021ceb590092a4321b46fb746647a51b47",
       "type": "process",
       "scope": "both",
       "permissions": [
@@ -28,6 +28,31 @@
         "by": "AllIsA1",
         "at": "2026-10-24",
         "notes": "Reviewed by the author. Reads clients and inbounds; takes part in subscription and clients API answers (seam:sub, seam:api:clients); links kept in its data dir; no network. Falls back to the panel."
+      }
+    },
+    {
+      "id": "better-openflux",
+      "name": "Better OpenFlux",
+      "summary": "Keeps the panel's OpenFlux core at v0.13.0 (more carriers, several links per carrier, l3)",
+      "repo": "https://github.com/AllIsA1/better-openflux",
+      "commit": "24df0fa5a6cf9eb7864180c88df91fd9f0933ae0",
+      "track": true,
+      "version": "1.0.1",
+      "manifestSha256": "e4ee2957a90432270fbf54a93554bbe879676c3ab06ec9cdc4bb5f216a4413d7",
+      "type": "process",
+      "scope": "both",
+      "permissions": [
+        "api:openflux:read",
+        "api:openflux:write",
+        "ui:menu"
+      ],
+      "icon": "thunderbolt",
+      "license": "MIT",
+      "author": "AllIsA1",
+      "verified": {
+        "by": "AllIsA1",
+        "at": "2026-10-24",
+        "notes": "Reviewed by the author. Only the OpenFlux core routes (status, download by hash, remove); the panel downloads and checks the hash; core built from upstream v0.13.0."
       }
     },
     {
