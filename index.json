@@ -1,27 +1,25 @@
 {
   "schema": 1,
-  "sequence": 15,
-  "generatedAt": "2026-10-25T13:33:19Z",
+  "sequence": 18,
+  "generatedAt": "2026-10-25T14:17:34Z",
   "plugins": [
     {
       "id": "better-csqtt",
       "name": "Better CSQTT",
       "summary": "One CSQTT password per person: each client of the inbound gets a member and their own link, so several people can use CSQTT at once",
       "repo": "https://github.com/AllIsA1/better-csqtt",
-      "commit": "0a9d9545c7f3652aae4c5326f7975723a2e15ec1",
+      "commit": "ca83be97082acd794aff5fe7569ce5da89ba495e",
       "track": true,
-      "version": "1.0.1",
-      "manifestSha256": "b29dbdd02a89fb9ccbfae8ec6bac7a4bbc2a4d352f308393cd6acefdb2d4a22b",
+      "version": "1.0.2",
+      "manifestSha256": "f78d48b112bd1e8b22067fc499aa8554fab31e4dd73b88770bc8afccdb66b5a8",
       "type": "process",
       "scope": "master",
       "permissions": [
         "api:clients:read",
         "api:inbounds:read",
         "network",
-        "seam:sub",
-        "ui:menu"
+        "seam:sub"
       ],
-      "icon": "team",
       "license": "MIT",
       "author": "AllIsA1",
       "verified": {
@@ -33,22 +31,20 @@
     {
       "id": "better-lucx",
       "name": "Better LucX",
-      "summary": "OpenFlux in the subscription and its page, links of any scheme, AmneziaWG link, plain CSQTT links, names on the page",
+      "summary": "Links of any scheme in the client form, AmneziaWG link, plain CSQTT links, names on the subscription page",
       "repo": "https://github.com/AllIsA1/better-lucx",
-      "commit": "7289de3d4db25293f951e1278909ba57b4944116",
+      "commit": "7456b88e4f79b0f0c931efd08ca1ae6ff58a4766",
       "track": true,
-      "version": "1.4.2",
-      "manifestSha256": "dd1e04820a1282efc29b16fffeab209f9fbba02b2ee8e1bad9aeb637654dbcd6",
+      "version": "1.4.3",
+      "manifestSha256": "74c8026ef75e02fb70c5a215bed6d82763d78c13e80fbbe9eb11cfb29896329e",
       "type": "process",
       "scope": "both",
       "permissions": [
         "api:clients:read",
         "api:inbounds:read",
         "seam:api:clients",
-        "seam:sub",
-        "ui:menu"
+        "seam:sub"
       ],
-      "icon": "link",
       "license": "MIT",
       "author": "AllIsA1",
       "verified": {
@@ -62,23 +58,21 @@
       "name": "Better OpenFlux",
       "summary": "Keeps the panel's OpenFlux core at v0.13.0 (more carriers, several links per carrier, l3)",
       "repo": "https://github.com/AllIsA1/better-openflux",
-      "commit": "24df0fa5a6cf9eb7864180c88df91fd9f0933ae0",
+      "commit": "3e09343f31dbc6d44b621e198dc354c48c0288f7",
       "track": true,
-      "version": "1.0.1",
-      "manifestSha256": "e4ee2957a90432270fbf54a93554bbe879676c3ab06ec9cdc4bb5f216a4413d7",
+      "version": "1.0.2",
+      "manifestSha256": "03d0db4046d4410e685387803287a61a6ecfef0a7c4f4e6fdfe6db8d8f30e1b9",
       "type": "process",
       "scope": "both",
       "permissions": [
         "api:openflux:read",
-        "api:openflux:write",
-        "ui:menu"
+        "api:openflux:write"
       ],
-      "icon": "thunderbolt",
       "license": "MIT",
       "author": "AllIsA1",
       "verified": {
         "by": "AllIsA1",
-        "at": "2026-10-24",
+        "at": "2026-10-25",
         "notes": "Reviewed by the author. Only the OpenFlux core routes (status, download by hash, remove); the panel downloads and checks the hash; core built from upstream v0.13.0."
       }
     }
