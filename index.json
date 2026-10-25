@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "sequence": 14,
-  "generatedAt": "2026-10-25T12:49:27Z",
+  "sequence": 15,
+  "generatedAt": "2026-10-25T13:33:19Z",
   "plugins": [
     {
       "id": "better-csqtt",
@@ -33,12 +33,12 @@
     {
       "id": "better-lucx",
       "name": "Better LucX",
-      "summary": "OpenFlux in the subscription and its page, links of any scheme, AmneziaWG amneziawg:// link, names on the page",
+      "summary": "OpenFlux in the subscription and its page, links of any scheme, AmneziaWG link, plain CSQTT links, names on the page",
       "repo": "https://github.com/AllIsA1/better-lucx",
-      "commit": "b1d05f5ee8671fbbcaf547bb5afac842e5d6e7d8",
+      "commit": "7289de3d4db25293f951e1278909ba57b4944116",
       "track": true,
-      "version": "1.4.1",
-      "manifestSha256": "9e31f9ddfac3fcec69f42c3194961bc82d9cdeabd0e2818ebe7d230b35a31546",
+      "version": "1.4.2",
+      "manifestSha256": "dd1e04820a1282efc29b16fffeab209f9fbba02b2ee8e1bad9aeb637654dbcd6",
       "type": "process",
       "scope": "both",
       "permissions": [
