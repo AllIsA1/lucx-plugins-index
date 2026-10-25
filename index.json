@@ -1,17 +1,17 @@
 {
   "schema": 1,
-  "sequence": 12,
-  "generatedAt": "2026-10-25T12:16:08Z",
+  "sequence": 14,
+  "generatedAt": "2026-10-25T12:49:27Z",
   "plugins": [
     {
       "id": "better-csqtt",
       "name": "Better CSQTT",
       "summary": "One CSQTT password per person: each client of the inbound gets a member and their own link, so several people can use CSQTT at once",
       "repo": "https://github.com/AllIsA1/better-csqtt",
-      "commit": "b53d76386dd5e7e2c8a884b03d51cba3fbf148d8",
+      "commit": "0a9d9545c7f3652aae4c5326f7975723a2e15ec1",
       "track": true,
-      "version": "1.0.0",
-      "manifestSha256": "7d536d9551f5590fe5ddb6719eda3b30ab3ca23e9396a41c58712f666bc0e3dd",
+      "version": "1.0.1",
+      "manifestSha256": "b29dbdd02a89fb9ccbfae8ec6bac7a4bbc2a4d352f308393cd6acefdb2d4a22b",
       "type": "process",
       "scope": "master",
       "permissions": [
@@ -33,12 +33,12 @@
     {
       "id": "better-lucx",
       "name": "Better LucX",
-      "summary": "OpenFlux in the subscription and its page, links of any scheme, AmneziaWG amneziawg:// link, CSQTT names",
+      "summary": "OpenFlux in the subscription and its page, links of any scheme, AmneziaWG amneziawg:// link, names on the page",
       "repo": "https://github.com/AllIsA1/better-lucx",
-      "commit": "ee30687fd8ef4b2a85250a28a4162481ba0582d3",
+      "commit": "b1d05f5ee8671fbbcaf547bb5afac842e5d6e7d8",
       "track": true,
-      "version": "1.4.0",
-      "manifestSha256": "8ddc031a6735a8e486d5dd209a8f585909994e36ee51924ad46f5b1da297afd3",
+      "version": "1.4.1",
+      "manifestSha256": "9e31f9ddfac3fcec69f42c3194961bc82d9cdeabd0e2818ebe7d230b35a31546",
       "type": "process",
       "scope": "both",
       "permissions": [
