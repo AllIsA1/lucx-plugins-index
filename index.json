@@ -1,17 +1,17 @@
 {
   "schema": 1,
-  "sequence": 22,
-  "generatedAt": "2026-10-27T15:14:14Z",
+  "sequence": 24,
+  "generatedAt": "2026-10-27T18:16:25Z",
   "plugins": [
     {
       "id": "better-cores",
       "name": "Better Cores",
-      "summary": "The tunnel cores of the panel at a glance: installed, running, last release of each project; no page of its own; the base Better OpenFlux needs",
+      "summary": "The tunnel cores of the panel at a glance: installed, running, last release of each project (olcRTC: the ghostlane-project fork); no page of its own; the base Better OpenFlux and Better olcRTC need",
       "repo": "https://github.com/AllIsA1/better-cores",
-      "commit": "ec5ffcf1d6d938c91d9a15d698e99a612b6681ee",
+      "commit": "1f0edb2b0b3403ebca8bed371cc75818bdc43800",
       "track": true,
-      "version": "0.1.1",
-      "manifestSha256": "3f58b88165985e1706f431b68cf0828d5ab9552f2d70da0747a03025d8a3e2d3",
+      "version": "0.1.2",
+      "manifestSha256": "343c644f6126a06b8fe78aadcd37501919224790f5abdf3f8c389f5c72af58d1",
       "type": "process",
       "scope": "both",
       "permissions": [
@@ -23,7 +23,7 @@
       "author": "AllIsA1",
       "verified": {
         "by": "AllIsA1",
-        "at": "2026-10-26",
+        "at": "2026-10-27",
         "notes": "Reviewed by the author. Reads the panel's status of the tunnel cores (no download, upload or logs); asks GitHub's public releases API for the last release of each project (network); changes nothing."
       }
     },
@@ -75,6 +75,29 @@
         "by": "AllIsA1",
         "at": "2026-10-25",
         "notes": "Reviewed by the author. Reads clients and inbounds; takes part in subscription and clients API answers (seam:sub, seam:api:clients); links kept in its data dir; no network. Falls back to the panel."
+      }
+    },
+    {
+      "id": "better-olcrtc",
+      "name": "Better olcRTC",
+      "summary": "Replaces the panel's olcRTC core by the ghostlane-project fork (SaluteJazz, VK Calls, MTS Link, several keys, UDP); needs Better Cores",
+      "repo": "https://github.com/AllIsA1/better-olcrtc",
+      "commit": "5d7e4b7aea9d3c053ff74308298bb54cbce1d480",
+      "track": true,
+      "version": "1.0.0",
+      "manifestSha256": "a96253ac19b405114447c520ccde528f8e1311a5adcd38fcc715ab59186cab3a",
+      "type": "process",
+      "scope": "both",
+      "permissions": [
+        "api:cores:read",
+        "api:olcrtc:write"
+      ],
+      "license": "MIT",
+      "author": "AllIsA1",
+      "verified": {
+        "by": "AllIsA1",
+        "at": "2026-10-27",
+        "notes": "Reviewed by the author. Only the olcRTC core routes (status, download by hash, remove); the panel checks the hash; core built from the fork's tag v0.12.1; no network permission."
       }
     },
     {
