@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "sequence": 21,
-  "generatedAt": "2026-10-26T17:35:03Z",
+  "sequence": 22,
+  "generatedAt": "2026-10-27T15:14:14Z",
   "plugins": [
     {
       "id": "better-cores",
@@ -32,10 +32,10 @@
       "name": "Better CSQTT",
       "summary": "One CSQTT password per person: each client of the inbound gets a member and their own link, so several people can use CSQTT at once",
       "repo": "https://github.com/AllIsA1/better-csqtt",
-      "commit": "ca83be97082acd794aff5fe7569ce5da89ba495e",
+      "commit": "8b5ef144f176456e6beb320d4adff927ddb31280",
       "track": true,
-      "version": "1.0.2",
-      "manifestSha256": "f78d48b112bd1e8b22067fc499aa8554fab31e4dd73b88770bc8afccdb66b5a8",
+      "version": "1.0.3",
+      "manifestSha256": "4a7a5d0d0c2264d37dec72895984f485b7d5be20becc4440af6fd79da33dbe3c",
       "type": "process",
       "scope": "master",
       "permissions": [
@@ -48,7 +48,7 @@
       "author": "AllIsA1",
       "verified": {
         "by": "AllIsA1",
-        "at": "2026-10-25",
+        "at": "2026-10-27",
         "notes": "Reviewed by the author. Reads the CSQTT inbound and its clients; calls the CSQTT server's own web API with its web password (network); only members it made are touched; falls back to the shared link."
       }
     },
