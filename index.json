@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "sequence": 32,
-  "generatedAt": "2026-10-28T16:55:18Z",
+  "sequence": 33,
+  "generatedAt": "2026-10-28T17:11:53Z",
   "plugins": [
     {
       "id": "better-cores",
@@ -116,10 +116,9 @@
       "name": "Better WARP",
       "summary": "Cloudflare WARP over AmneziaWG: a WARP inbound protocol, four formats like AmneziaWG, a device per subscriber, WARP+ key, check and endpoint scanner",
       "repo": "https://github.com/AllIsA1/better-warp",
-      "commit": "e0804d1b3694183420793ad2e6a22eab8314dda4",
-      "track": true,
-      "version": "1.1.0",
-      "manifestSha256": "61d081571f7a3e9494a97768ccd916c6ed9545673a0d4a79ea8df75594719369",
+      "commit": "09bc7fc26f8e482a3e3d691daa073ca4f4e594d8",
+      "version": "1.1.1",
+      "manifestSha256": "8524ddcc1b542f0eaebbf88549c7bed6fba0a3fe0fb771ea57e2114700078d06",
       "type": "process",
       "scope": "master",
       "permissions": [
