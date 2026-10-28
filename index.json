@@ -1,22 +1,19 @@
 {
   "schema": 1,
-  "sequence": 27,
-  "generatedAt": "2026-10-28T13:57:35Z",
+  "sequence": 31,
+  "generatedAt": "2026-10-28T15:11:44Z",
   "plugins": [
     {
       "id": "better-cores",
       "name": "Better Cores",
-      "summary": "Tunnel cores at a glance, and the WARP engine (check, endpoint scanner) that other plugins build on",
+      "summary": "The WARP engine (check, endpoint scanner) that Better WARP builds on",
       "repo": "https://github.com/AllIsA1/better-cores",
-      "commit": "a72130568de55e1ffcfc0f7654a7a058b7a71735",
-      "track": true,
-      "version": "0.2.0",
-      "manifestSha256": "283314674530afd3be87b36ee42d3e782ee0016faf3d3eef9fdf80db71403258",
+      "commit": "4a96759c180a497ddfa9906abf67d256e312bc00",
+      "version": "0.3.0",
+      "manifestSha256": "f97c87a0d66bbadc579551347566c886a3074a1aee74819ddda2c5a504986aa6",
       "type": "process",
       "scope": "both",
       "permissions": [
-        "api:cores:read",
-        "api:openflux:read",
         "network"
       ],
       "license": "MIT",
@@ -24,7 +21,7 @@
       "verified": {
         "by": "AllIsA1",
         "at": "2026-10-28",
-        "notes": "Reviewed by the author. Read-only core status, GitHub releases; the WARP engine sends packets only to Cloudflare's WARP ranges; peer API under /peer/ only (host-9)."
+        "notes": "Reviewed by the author. No panel API access; the WARP engine sends packets only to Cloudflare's WARP ranges; peer API under /peer/ only (host-9)."
       }
     },
     {
@@ -55,72 +52,61 @@
     {
       "id": "better-lucx",
       "name": "Better LucX",
-      "summary": "Links of any scheme in the client form, AmneziaWG link, plain CSQTT links, names on the subscription page",
+      "summary": "AmneziaWG config link for every client, plain CSQTT links, CSQTT and OpenFlux names on the subscription page",
       "repo": "https://github.com/AllIsA1/better-lucx",
-      "commit": "7456b88e4f79b0f0c931efd08ca1ae6ff58a4766",
-      "track": true,
-      "version": "1.4.3",
-      "manifestSha256": "74c8026ef75e02fb70c5a215bed6d82763d78c13e80fbbe9eb11cfb29896329e",
+      "commit": "1ea7be553d6ca96a15869ec07c733c26747de847",
+      "version": "2.0.0",
+      "manifestSha256": "82c0f1f742e0b889f12553acae2b5056efca471511a83ded9b1e41e79433454e",
       "type": "process",
       "scope": "both",
       "permissions": [
-        "api:clients:read",
         "api:inbounds:read",
-        "seam:api:clients",
         "seam:sub"
       ],
       "license": "MIT",
       "author": "AllIsA1",
       "verified": {
         "by": "AllIsA1",
-        "at": "2026-10-25",
-        "notes": "Reviewed by the author. Reads clients and inbounds; takes part in subscription and clients API answers (seam:sub, seam:api:clients); links kept in its data dir; no network. Falls back to the panel."
+        "at": "2026-10-28",
+        "notes": "Reviewed by the author. Reads inbounds; takes part in subscription answers only (seam:sub); no stored data, no network, no page. Falls back to the panel."
       }
     },
     {
       "id": "better-olcrtc",
       "name": "Better olcRTC",
-      "summary": "Replaces the panel's olcRTC core by the ghostlane-project fork (SaluteJazz, VK Calls, MTS Link, several keys, UDP); needs Better Cores",
+      "summary": "Does nothing now: the panel brings the olcRTC fork itself since lucx.325; can be removed",
       "repo": "https://github.com/AllIsA1/better-olcrtc",
-      "commit": "5d7e4b7aea9d3c053ff74308298bb54cbce1d480",
-      "track": true,
-      "version": "1.0.0",
-      "manifestSha256": "a96253ac19b405114447c520ccde528f8e1311a5adcd38fcc715ab59186cab3a",
+      "commit": "c1b445c77fa1d0375c7773304da3b22bebd91695",
+      "version": "2.0.0",
+      "manifestSha256": "9cd44ecc71a4c7a00cd950c087ef9dfe83619af9c349183f252d6a16f5a453af",
       "type": "process",
       "scope": "both",
-      "permissions": [
-        "api:cores:read",
-        "api:olcrtc:write"
-      ],
+      "permissions": [],
       "license": "MIT",
       "author": "AllIsA1",
       "verified": {
         "by": "AllIsA1",
-        "at": "2026-10-27",
-        "notes": "Reviewed by the author. Only the olcRTC core routes (status, download by hash, remove); the panel checks the hash; core built from the fork's tag v0.12.1; no network permission."
+        "at": "2026-10-28",
+        "notes": "Reviewed by the author. No permissions, no page; answers the health check only."
       }
     },
     {
       "id": "better-openflux",
       "name": "Better OpenFlux",
-      "summary": "Keeps the panel's OpenFlux core at v0.13.0 (more carriers, several links per carrier, l3)",
+      "summary": "Does nothing now: the panel brings OpenFlux v0.13.0 itself since lucx.326; can be removed",
       "repo": "https://github.com/AllIsA1/better-openflux",
-      "commit": "7e59a895db773f5d387e89d1a3909762c7ea1ba8",
-      "track": true,
-      "version": "1.0.3",
-      "manifestSha256": "5753fffbc81502ea70fdef68f664a8e47e195396bc7f06bc09f7ebd5f3340132",
+      "commit": "916e726631a4d28b78514f9ddcee315ecb51d691",
+      "version": "2.0.0",
+      "manifestSha256": "461e7d6ab3f6dfeeb80a38933bb5160d7bde7bd7162c3190e305cec1bd806b27",
       "type": "process",
       "scope": "both",
-      "permissions": [
-        "api:openflux:read",
-        "api:openflux:write"
-      ],
+      "permissions": [],
       "license": "MIT",
       "author": "AllIsA1",
       "verified": {
         "by": "AllIsA1",
-        "at": "2026-10-25",
-        "notes": "Reviewed by the author. Only the OpenFlux core routes (status, download by hash, remove); the panel downloads and checks the hash; core built from upstream v0.13.0."
+        "at": "2026-10-28",
+        "notes": "Reviewed by the author. No permissions, no page; answers the health check only."
       }
     },
     {
