@@ -1,19 +1,21 @@
 {
   "schema": 1,
-  "sequence": 31,
-  "generatedAt": "2026-10-28T15:11:44Z",
+  "sequence": 32,
+  "generatedAt": "2026-10-28T16:55:18Z",
   "plugins": [
     {
       "id": "better-cores",
       "name": "Better Cores",
-      "summary": "The WARP engine (check, endpoint scanner) that Better WARP builds on",
+      "summary": "Keeps the panel's cores up to date from Settings → Cores (OpenFlux, mieru, TrustTunnel) and carries the WARP engine Better WARP builds on",
       "repo": "https://github.com/AllIsA1/better-cores",
-      "commit": "4a96759c180a497ddfa9906abf67d256e312bc00",
-      "version": "0.3.0",
-      "manifestSha256": "f97c87a0d66bbadc579551347566c886a3074a1aee74819ddda2c5a504986aa6",
+      "commit": "44c1720298febe3857330742c5a00c6e707e40fb",
+      "version": "0.4.0",
+      "manifestSha256": "3156201f4569ef57d13f0f6b7b766afb8593b4bc800646771b9f9817091c18a0",
       "type": "process",
       "scope": "both",
       "permissions": [
+        "api:cores:write",
+        "api:server:read",
         "network"
       ],
       "license": "MIT",
@@ -21,7 +23,7 @@
       "verified": {
         "by": "AllIsA1",
         "at": "2026-10-28",
-        "notes": "Reviewed by the author. No panel API access; the WARP engine sends packets only to Cloudflare's WARP ranges; peer API under /peer/ only (host-9)."
+        "notes": "Reviewed by the author. api:cores:write only downloads OpenFlux, mieru, TrustTunnel via the panel, which checks the SHA-256. api:server:read: panel version. Network: GitHub, WARP ranges. Needs host-11"
       }
     },
     {
