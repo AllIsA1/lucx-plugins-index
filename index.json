@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "sequence": 26,
-  "generatedAt": "2026-10-28T12:38:55Z",
+  "sequence": 27,
+  "generatedAt": "2026-10-28T13:57:35Z",
   "plugins": [
     {
       "id": "better-cores",
@@ -126,16 +126,17 @@
     {
       "id": "better-warp",
       "name": "Better WARP",
-      "summary": "Cloudflare WARP over AmneziaWG in the subscription: four formats like AmneziaWG, a device per subscriber, WARP+ key, check and endpoint scanner",
+      "summary": "Cloudflare WARP over AmneziaWG: a WARP inbound protocol, four formats like AmneziaWG, a device per subscriber, WARP+ key, check and endpoint scanner",
       "repo": "https://github.com/AllIsA1/better-warp",
-      "commit": "dfcdcaf3bd0fda1742d984adc633b0ec9210a4cc",
+      "commit": "e0804d1b3694183420793ad2e6a22eab8314dda4",
       "track": true,
-      "version": "1.0.0",
-      "manifestSha256": "64f5ea37e39ed87ce6b96de5eeae61288dd95a14dc87906b1397487bce8a6877",
+      "version": "1.1.0",
+      "manifestSha256": "61d081571f7a3e9494a97768ccd916c6ed9545673a0d4a79ea8df75594719369",
       "type": "process",
       "scope": "master",
       "permissions": [
         "api:clients:read",
+        "api:inbounds:read",
         "network",
         "peer:better-cores",
         "seam:sub",
@@ -147,7 +148,7 @@
       "verified": {
         "by": "AllIsA1",
         "at": "2026-10-28",
-        "notes": "Reviewed by the author. seam:sub lines, reads clients, registers anonymous WARP devices (network); check and scan run in Better Cores (peer:better-cores). Needs host-9."
+        "notes": "Reviewed by the author. seam:sub lines, reads clients and inbounds, anonymous WARP devices (network); check/scan in Better Cores (peer). Needs host-9 and the WARP-inbound panel build."
       }
     }
   ]
