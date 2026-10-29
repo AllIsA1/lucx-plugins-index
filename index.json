@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "sequence": 33,
-  "generatedAt": "2026-10-28T17:11:53Z",
+  "sequence": 34,
+  "generatedAt": "2026-10-29T12:01:41Z",
   "plugins": [
     {
       "id": "better-cores",
@@ -114,18 +114,20 @@
     {
       "id": "better-warp",
       "name": "Better WARP",
-      "summary": "Cloudflare WARP over AmneziaWG: a WARP inbound protocol, four formats like AmneziaWG, a device per subscriber, WARP+ key, check and endpoint scanner",
+      "summary": "Cloudflare WARP over AmneziaWG: a WARP inbound protocol, four formats like AmneziaWG, a device per subscriber, WARP+ key, endpoint scanner; WARP as an Xray outbound with routing rules",
       "repo": "https://github.com/AllIsA1/better-warp",
-      "commit": "09bc7fc26f8e482a3e3d691daa073ca4f4e594d8",
-      "version": "1.1.1",
-      "manifestSha256": "8524ddcc1b542f0eaebbf88549c7bed6fba0a3fe0fb771ea57e2114700078d06",
+      "commit": "e26c87e619a11cf923ea56cc9651e5ee91bf67d8",
+      "version": "1.2.0",
+      "manifestSha256": "432e4ce5bb7180c0a6d89c038988c46bce7a1b50fd24fc78503d9872b8f83726",
       "type": "process",
       "scope": "master",
       "permissions": [
         "api:clients:read",
         "api:inbounds:read",
+        "api:server:write",
         "network",
         "peer:better-cores",
+        "pipeline:xray.config",
         "seam:sub",
         "ui:menu"
       ],
@@ -134,8 +136,8 @@
       "author": "AllIsA1",
       "verified": {
         "by": "AllIsA1",
-        "at": "2026-10-28",
-        "notes": "Reviewed by the author. seam:sub lines, reads clients and inbounds, anonymous WARP devices (network); check/scan in Better Cores (peer). Needs host-9 and the WARP-inbound panel build."
+        "at": "2026-10-29",
+        "notes": "Reviewed by the author. 1.2.0 adds pipeline:xray.config (WARP outbound and rules in Xray) and api:server:write (Restart Xray button, on click only). Needs host-9."
       }
     }
   ]
