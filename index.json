@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "sequence": 34,
-  "generatedAt": "2026-10-29T12:01:41Z",
+  "sequence": 35,
+  "generatedAt": "2026-10-29T14:37:42Z",
   "plugins": [
     {
       "id": "better-cores",
@@ -114,11 +114,11 @@
     {
       "id": "better-warp",
       "name": "Better WARP",
-      "summary": "Cloudflare WARP over AmneziaWG: a WARP inbound protocol, four formats like AmneziaWG, a device per subscriber, WARP+ key, endpoint scanner; WARP as an Xray outbound with routing rules",
+      "summary": "Cloudflare WARP over AmneziaWG as a protocol of the subscription: add a WARP inbound (panel build with it), attach clients, and each gets WARP nodes in the same four forms as an AmneziaWG node, with their own device, WARP+ license, and a check and endpoint scanner (Better Cores). Also gives this ser",
       "repo": "https://github.com/AllIsA1/better-warp",
-      "commit": "e26c87e619a11cf923ea56cc9651e5ee91bf67d8",
-      "version": "1.2.0",
-      "manifestSha256": "432e4ce5bb7180c0a6d89c038988c46bce7a1b50fd24fc78503d9872b8f83726",
+      "commit": "99249f2841c5caab3f705d08ee78abfe5003b89e",
+      "version": "1.3.0",
+      "manifestSha256": "8adc8e6fc098f5165d90573c3293e0bd4d2fcd1d7fd22696441963b4033fa02d",
       "type": "process",
       "scope": "master",
       "permissions": [
@@ -137,7 +137,7 @@
       "verified": {
         "by": "AllIsA1",
         "at": "2026-10-29",
-        "notes": "Reviewed by the author. 1.2.0 adds pipeline:xray.config (WARP outbound and rules in Xray) and api:server:write (Restart Xray button, on click only). Needs host-9."
+        "notes": "Reviewed by the author. 1.3.0: routing rules can send traffic directly, bypassing WARP (e.g. .ru sites), or take all traffic. No new permissions."
       }
     }
   ]
